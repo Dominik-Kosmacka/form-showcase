@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+$primary-color: #f96816;
+$secondary-color: #ff7b39;
+$dark-color: #181818;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Left side - form
+  #login-left {
+    background: $dark-color;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .signin-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      padding-bottom: 1rem;
+      .logo {
+        margin-bottom: 8rem;
+      }
+      form {
+        padding-bottom: 3rem;
+        width: 80%;
+        label {
+          font-size: 0.9rem;
+        }
+
+        .text-input {
+          width: 100%;
+          margin: 0.5rem 0 2rem 0;
+          padding: 0.7rem 0 0.7rem 0.75rem;
+          background: $dark-color;
+          border: 1px solid #555;
+          border-radius: 5px;
+          color: #fff;
+
+          &:focus {
+            outline: none;
+            border: 1px solid $primary-color;
+          }
+
+          &:hover {
+            border: 1px solid $secondary-color;
+            transition: border 0.7s ease;
+          }
+        }
+
+        .btn-primary {
+          display: block;
+          font-size: 1.2rem;
+          width: 100%;
+          padding: 0.75rem 0;
+          background: $primary-color;
+          color: #fff;
+          outline: none;
+          border: 1px solid $primary-color;
+
+          &:hover {
+            transition: all 0.4s ease;
+            background: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+          }
+        }
+      }
+
+      .links,
+      .or-lines,
+      .btn-secondary {
+        width: 60%;
+      }
+
+      .links a {
+        text-align: center;
+        margin-bottom: 0.75rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .or-lines {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .line {
+          height: 1px;
+          background: #555;
+          flex: auto;
+          border: none;
+        }
+        span {
+          padding: 0 0.8rem;
+        }
+      }
+      .btn-secondary {
+        margin: 1rem 0;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        outline: none;
+        padding: 0.5rem 0;
+
+        &:hover {
+          transition: all 0.7s ease;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  // Right side - showcase
+  #showcase-right {
+    height: 100vh;
+    background: url('/dist/img/login-bg.jpg');
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .showcase-content {
+      text-align: center;
+
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        color: #fff;
+        font-weight: 400;
+
+        span {
+          font-weight: bolder;
+        }
+      }
+
+      .btn-secondary {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        padding: 1rem 2.5rem;
+        transition: all 0.7s ease;
+
+        &:hover {
+          border: 1px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  #footer {
+    margin-top: 5rem;
+    text-align: center;
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    div {
+      margin-top: 0.75rem;
+
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@import 'media';

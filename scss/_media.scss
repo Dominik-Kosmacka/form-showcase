@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .wrapper {
+    #showcase-right {
+      display: none;
+      opacity: 0;
+    }
+
+    #login-left {
+      .signin-form {
+        .logo {
+          margin-bottom: 4rem;
+        }
+        .text-input {
+          margin-bottom: 0.7rem;
+        }
+      }
+    }
+    #footer {
+      padding-top: 1rem;
+    }
+  }
+}
