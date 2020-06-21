@@ -98,7 +98,7 @@ body {
           color: #f96816; }
   .wrapper #showcase-right {
     height: 100vh;
-    background: url("/dist/img/login-bg.jpg");
+    background: url("../img/login-bg.jpg");
     flex: 2;
     display: flex;
     justify-content: center;
